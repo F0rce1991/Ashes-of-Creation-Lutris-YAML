@@ -1,0 +1,103 @@
+name: "Ashes of Creation"
+game_slug: "ashes-of-creation"
+version: "Ashes of Creation Alpha2"
+slug: "ashes-of-creation"
+runner: "wine"
+year: 2019
+description: "Ashes of Creation takes place within a medieval fantasy setting, blending imagination with cutting-edge graphics. We are putting the word massive back into massively multiplayer with unique and novel mechanics that will bring meaning to player action. Ashes of Creation will incorporate the best parts of traditional MMORPGs with innovative sandbox concepts. You will choose your fate at every opportunity. Questlines will open and close based on the interations of the players with their world, because this is a world where choice is consequential. Monsters will roam and grow in ferocity as civilization disrupts the natural order of things. From the location of towns to the size of cities, you will determine the landcsape of your world. It will be unique in culture, ecology, and economy. No two servers will experience Ashes of Creation in the same way!"
+script:
+    files:
+    - client: https://ff-intrepid-launcher.s3.us-east-2.amazonaws.com/b9p7a3j6-6cw3-nz5s-km5y-r9w8u2x5cb4d/IntrepidInstaller-0.3.260.12945.exe
+    - webview2: https://go.microsoft.com/fwlink/p/?LinkId=2124703
+    game:
+        arch: win64
+        exe: $GAMEDIR/drive_c/Program Files/Intrepid Studios/Launcher/IntrepidStudiosLauncher.exe
+        prefix: $GAMEDIR
+        install_complete_text: "Installation complete!"
+    installer:
+    - move:
+        src: webview2
+        dst: MicrosoftEdgeWebview2Setup.exe
+    - task:
+        arch: win64
+        description: Creating Wine Prefix
+        name: create_prefix
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        app: vcrun2022
+        description: Installing Microsoft Visual C++ Redistributable 2015-2022...
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        app: corefonts
+        description: Installing Microsoft Windows Corefonts...
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        app: dotnet472
+        description: Installing Microsoft .NET Framework 4.7.2...
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        args: /silent /install
+        description: Installing Microsoft Edge Webview2...
+        executable: $GAMEDIR\MicrosoftEdgeWebview2Setup.exe
+        name: wineexec
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        description: Setting registry key for Webview2 Windows 7 compatibility mode...
+        name: set_regedit
+        path: HKEY_CURRENT_USER\Software\Wine\AppDefaults\msedgewebview2.exe
+        key: 'Version'
+        value: 'win7'
+        type: REG_SZ
+    - task:
+        arch: win64
+        description: Setting registry key for Webview2 mscoree DllOverride...
+        name: set_regedit
+        path: HKEY_CURRENT_USER\Software\Wine\AppDefaults\msedgewebview2.exe\DllOverrides
+        key: 'mscoree'
+        value: 'native,builtin'
+        type: REG_SZ
+    - task:
+        arch: win64
+        description: Setting registry key for Webview2 urlmon DllOverride...
+        name: set_regedit
+        path: HKEY_CURRENT_USER\Software\Wine\AppDefaults\msedgewebview2.exe\DllOverrides
+        key: 'urlmon'
+        value: 'native,builtin'
+        type: REG_SZ
+    - execute:
+        description: Remove Microsoft Edge Webview2 Installer...
+        command: 'rm $GAMEDIR/MicrosoftEdgeWebview2Setup.exe'
+    - task:
+        arch: win64
+        app: win10
+        description: Installing Windows 10 Environment...
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        description: Installing Intrepid Launcher...
+        executable: client
+        name: wineexec
+        prefix: $GAMEDIR
+    system:
+        env:
+            DXVK_HUD: compiler
+            DXVK_STATE_CACHE_PATH: $GAMEDIR
+            __GL_SHADER_DISK_CACHE: 1
+            __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
+            __GL_SHADER_DISK_CACHE_SKIP_CLEANUP: 1
+        prefer_system_libs: false
+    wine:
+        version: GE-Proton9-20
+        battleye: false
+        overrides:
+            nvapi,nvapi64: disabled
+    system_winetricks: false
