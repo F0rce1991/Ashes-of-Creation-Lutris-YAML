@@ -20,7 +20,7 @@ script:
         dst: MicrosoftEdgeWebview2Setup.exe
     - task:
         arch: win64
-        description: Creating Wine Prefix
+        description: Creating Wine prefix...
         name: create_prefix
         prefix: $GAMEDIR
     - task:
@@ -75,6 +75,10 @@ script:
     - execute:
         description: Remove Microsoft Edge Webview2 Installer...
         command: 'rm $GAMEDIR/MicrosoftEdgeWebview2Setup.exe'
+    - write_file:
+        description: Creating dxvk.conf...
+        file: $GAMEDIR/drive_c/dxvk.conf
+        content: 'd3d9.shaderModel = 1'
     - task:
         arch: win64
         app: win10
@@ -91,6 +95,8 @@ script:
         env:
             DXVK_HUD: compiler
             DXVK_STATE_CACHE_PATH: $GAMEDIR
+            DXVK_CONFIG_FILE: $GAMEDIR/drive_c/dxvk.conf
+            DXVK_ENABLE_NVAPI: 1
             __GL_SHADER_DISK_CACHE: 1
             __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
             __GL_SHADER_DISK_CACHE_SKIP_CLEANUP: 1
