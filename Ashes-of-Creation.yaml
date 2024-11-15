@@ -23,9 +23,6 @@ script:
     - move:
         src: webview2
         dst: MicrosoftEdgeWebview2Setup.exe
-    - move:
-        src: script
-        dst: $GAMEDIR
     - task:
         arch: win64
         app: vcrun2022
