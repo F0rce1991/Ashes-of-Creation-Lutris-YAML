@@ -8,7 +8,6 @@ description: "Ashes of Creation takes place within a medieval fantasy setting, b
 script:
     files:
     - client: https://ff-intrepid-launcher.s3.us-east-2.amazonaws.com/b9p7a3j6-6cw3-nz5s-km5y-r9w8u2x5cb4d/IntrepidInstaller-0.3.260.12945.exe
-    - script: https://raw.githubusercontent.com/F0rce1991/Ashes-of-Creation-Lutris-YAML/refs/heads/main/aoc-port-updater.sh
     - webview2: https://go.microsoft.com/fwlink/p/?LinkId=2124703
     game:
         arch: win64
@@ -105,7 +104,6 @@ script:
             __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
             __GL_SHADER_DISK_CACHE_SKIP_CLEANUP: 1
         prefer_system_libs: false
-        prelaunch_command: $GAMEDIR/aoc-port-updater.sh
     wine:
         version: GE-Proton9-20
         battleye: false
