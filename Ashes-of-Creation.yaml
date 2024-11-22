@@ -7,7 +7,7 @@ year: 2019
 description: "Ashes of Creation takes place within a medieval fantasy setting, blending imagination with cutting-edge graphics. We are putting the word massive back into massively multiplayer with unique and novel mechanics that will bring meaning to player action. Ashes of Creation will incorporate the best parts of traditional MMORPGs with innovative sandbox concepts. You will choose your fate at every opportunity. Questlines will open and close based on the interations of the players with their world, because this is a world where choice is consequential. Monsters will roam and grow in ferocity as civilization disrupts the natural order of things. From the location of towns to the size of cities, you will determine the landcsape of your world. It will be unique in culture, ecology, and economy. No two servers will experience Ashes of Creation in the same way!"
 script:
     files:
-    - client: https://ff-intrepid-launcher.s3.us-east-2.amazonaws.com/b9p7a3j6-6cw3-nz5s-km5y-r9w8u2x5cb4d/IntrepidInstaller-0.3.260.12945.exe
+    - client: https://ff-intrepid-launcher.s3.us-east-2.amazonaws.com/b9p7a3j6-6cw3-nz5s-km5y-r9w8u2x5cb4d/IntrepidInstaller-0.3.266.19488.exe
     - webview2: https://go.microsoft.com/fwlink/p/?LinkId=2124703
     game:
         arch: win64
