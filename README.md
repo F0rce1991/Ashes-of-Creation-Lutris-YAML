@@ -31,9 +31,9 @@ How to install Intrepid Launcher and Ashes of Creation:
 18. Now search for 'AOCClient' in the search field of Steam Library
 19. Right click on it and select 'Properties...'
 20. In the first field replace 'AOCClient' with 'Ashes of Creation'
-21. If you wanna have a icon you can download it from <a href="https://cdn2.steamgriddb.com/icon/87bcf871c6bd574be8397ba850907214.png">here</a>. The click on the empty space in front of the first text field and select the downloaded icon.
+21. If you wanna have a icon you can download it from <a href="https://cdn2.steamgriddb.com/icon/87bcf871c6bd574be8397ba850907214.png">here</a>. Then click on the empty space in front of the first text field and select the downloaded icon.
 22. Enter the following string to the LAUNCH OPTIONS textfield
-<pre>eval $(gamemoderun DXVK_STATE_CACHE_PATH='/home/force/Games/ashes-of-creation' __GL_SHADER_DISK_CACHE=1 __GL_SHADER_DISK_CACHE_PATH='/home/force/Games/ashes-of-creation' __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 DXVK_ENABLE_NVAPI=1 %command% AOC LauncherTetherPort=$(ss -ulpn | grep wineserv | awk '{split($4, a , ":"); print a[2]}' ) -USEEOS=0)</pre>
+<pre>eval $(gamemoderun %command% AOC LauncherTetherPort=$(ss -ulpn | grep wineserv | awk '{split($4, a , ":"); print a[2]}' ) -USEEOS=0)</pre>
 24. On the left side of the window click on 'Compatibility', check the checkbox and select 'GE-Proton9-20' from the dropdown menu.
 25. Now you can close the window and clear the search field
 26. Now you should see a entry 'Ashes of Creation' in your Steam Library
