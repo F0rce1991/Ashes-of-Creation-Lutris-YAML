@@ -17,7 +17,7 @@ How to install Intrepid Launcher and Ashes of Creation:
 4. Select the installation method with YAML file
 5. Click ... in the 'Script file' field and select the previously downloaded YAML file
 6. Click the install buttons
-7. Select the install path. The options below it you can you set as desired.
+7. Select the install path. The options below can be set as desired.
 8. Leave everything as is and click the install button again
 9. Wait for the installation to complete (this may take a few minutes)
 10. When the Intrepid Launcher instllation window pops up you can leave everything as is and just start the installation
