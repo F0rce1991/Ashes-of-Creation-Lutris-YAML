@@ -21,8 +21,8 @@ How to install Intrepid Launcher and Ashes of Creation:
 8. Leave everything as is and click the install button again
 9. Wait for the installation to complete (this may take a few minutes)
 10. When the Intrepid Launcher installation window pops up you can leave everything as is and just start the installation
-11. After the installation is done you can decide if you wanna start the Intrepid Launcher right away. Nonetheless it is recommanded to uncheck the box and first finish the installation in Lutris.
-12. After the installation has finished you can start Intrepid Launcher from the Lutris Library
+11. Once the installation of Intrepid Launcher is done you can decide if you wanna start it right away. Nonetheless it is recommanded to uncheck the box and first finish the installation in Lutris.
+12. Once the installation is complete in Lutris, you can start Intrepid Launcher from the Lutris library
 13. Log in to your Intrepid Account and wait for the download of the game to finish (<b>IMPORTANT!</b> The 'Launch Game' button doesn't work with Linux. That is the part where Steam comes into play.)
 14. Open Steam
 15. Click 'Add a Game' and then 'Add a Non-Steam Game...'
