@@ -9,7 +9,7 @@ script:
     files:
     - setup:
         filename: intrepid_installer.exe
-        url: https://ff-intrepid-launcher.s3.us-east-2.amazonaws.com/b9p7a3j6-6cw3-nz5s-km5y-r9w8u2x5cb4d/IntrepidInstaller-0.3.266.19488.exe
+        url: https://ff-intrepid-launcher.s3.us-east-2.amazonaws.com/b9p7a3j6-6cw3-nz5s-km5y-r9w8u2x5cb4d/IntrepidInstaller-0.3.268.25582.exe
     - webview2:
         filename: MicrosoftEdgeWebview2Setup.exe
         url: https://github.com/aedancullen/webview2-evergreen-standalone-installer-archive/releases/download/109.0.1518.78/MicrosoftEdgeWebView2RuntimeInstallerX64.exe
