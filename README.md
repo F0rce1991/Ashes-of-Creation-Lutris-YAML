@@ -4,7 +4,7 @@
 
 What you need, to use this installation method:
 ==============================================
-- Linux System (e.g. Nobara Linux)
+- Linux system (e.g. Nobara Linux, Fedora, Arch Linux, etc. <b>and avoid Debian-based distributions such as Ubuntu, etc., as these can cause some problems</b>)
 - Lutris installed
 - Steam installed
 - GE-Proton9-22 installed (To comfortably install and keep up to date GE-Proton, I recommand to use the application 'ProtonPlus')
