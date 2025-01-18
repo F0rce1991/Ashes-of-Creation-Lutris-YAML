@@ -42,7 +42,8 @@ How to start the game:
 ======================
 1. Start Intrepid Launcher from your Lutris Library
 2. Log in to your Intrepid Account
-3. Start 'Ashes of Creation' from your Steam Library (Intrepid Launcher have to stay open and logged in while playing the game)
+3. If there is an update to the game wait for it to finish.
+4. Start 'Ashes of Creation' from your Steam Library (Intrepid Launcher have to stay open and logged in while playing the game)
 
 For comfort reasons I recommand to create Desktop Shortcuts for Inrepid Launcher and Ashes of Creation Client. You can do so by right clicking on 'Ashes of Creation' in Lutris and select the corresponding option from dropdown menu. In the Steam Library it works basically the same (right click on 'Ashes of Creation', select 'Manage' in the dropdown menu and then 'Add desktop shortcut')
 
