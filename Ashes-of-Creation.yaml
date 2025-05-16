@@ -45,14 +45,6 @@ script:
         prefix: $GAMEDIR
     - task:
         arch: win64
-        description: Setting registry key for Webview2 Windows 7 compatibility mode...
-        name: set_regedit
-        path: HKEY_CURRENT_USER\Software\Wine\AppDefaults\msedgewebview2.exe
-        key: 'Version'
-        value: 'win7'
-        type: REG_SZ
-    - task:
-        arch: win64
         description: Setting registry key for Webview2 mscoree DllOverride...
         name: set_regedit
         path: HKEY_CURRENT_USER\Software\Wine\AppDefaults\msedgewebview2.exe\DllOverrides
@@ -67,10 +59,6 @@ script:
         key: 'urlmon'
         value: 'native,builtin'
         type: REG_SZ
-    - write_file:
-        description: Creating dxvk.conf...
-        file: $GAMEDIR/drive_c/dxvk.conf
-        content: 'd3d9.shaderModel = 1'
     - task:
         arch: win64
         app: win11
@@ -98,10 +86,8 @@ script:
             USEEOS: 0
         prefer_system_libs: false
     wine:
-        version: GE-Proton9-27
+        version: GE-Proton10-1
         battleye: false
         overrides:
             nvapi,nvapi64: disabled
     system_winetricks: false
-
-
