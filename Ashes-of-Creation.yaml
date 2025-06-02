@@ -86,7 +86,7 @@ script:
             USEEOS: 0
         prefer_system_libs: false
     wine:
-        version: GE-Proton10-3
+        version: GE-Proton10-4
         battleye: false
         overrides:
             nvapi,nvapi64: disabled
