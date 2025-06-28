@@ -41,7 +41,7 @@ How to install Intrepid Launcher and Ashes of Creation:
 - Now search for 'AOCClient' in the search field of Steam Library
 - Right click on it and select 'Properties...'
 - In the first field replace 'AOCClient' with 'Ashes of Creation'
-- If you wanna have a icon you can download it from here. Then click on the empty space in front of the first text field and select the downloaded icon.
+- If you wanna have a icon, banner, etc. for your Steam entry, you can download it from [here](https://www.steamgriddb.com/search/grids?term=Ashes+of+Creation). Then click on the empty space in front of the first text field and select the downloaded icon.
 - Enter the following string to the LAUNCH OPTIONS textfield
   
   `eval $(gamemoderun %command% AOC LauncherTetherPort=$(ss -ulpn | grep wineserv | awk '{split($4, a , ":"); print a[2]}' ) -USEEOS=0)`
