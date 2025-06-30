@@ -15,7 +15,7 @@ What you need, to use this installation method:
 - Linux system (e.g. Nobara Linux, Fedora, Arch Linux, etc. and avoid Debian-based distributions such as Ubuntu, etc., as these can cause some problems)
 - Lutris installed
 - Steam installed
-- GE-Proton10-4 installed (To comfortably install and keep up to date GE-Proton, I recommand to use the application 'ProtonPlus')
+- GE-Proton10-7 installed (To comfortably install and keep up to date GE-Proton, I recommand to use the application 'ProtonPlus')
 - Proton EasyAntiCheat Runtime installed in Steam
 
 How to install Intrepid Launcher and Ashes of Creation:
