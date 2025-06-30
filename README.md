@@ -46,7 +46,7 @@ How to install Intrepid Launcher and Ashes of Creation:
   
   `eval $(gamemoderun %command% AOC LauncherTetherPort=$(ss -ulpn | grep wineserv | awk '{split($4, a , ":"); print a[2]}' ) -USEEOS=0)`
   
-- On the left side of the window click on 'Compatibility', check the checkbox and select 'GE-Proton10-4' from the dropdown menu.
+- On the left side of the window click on 'Compatibility', check the checkbox and select 'GE-Proton10-7' from the dropdown menu.
 - Next you can close the window and clear the search field
 - You now should see a entry 'Ashes of Creation' in your Steam Library
 
