@@ -15,7 +15,7 @@ What you need, to use this installation method:
 - Linux system (e.g. Nobara Linux, Fedora, Arch Linux, etc. and avoid Debian-based distributions such as Ubuntu, etc., as these can cause some problems)
 - Lutris installed
 - Steam installed
-- GE-Proton10-10 installed (To comfortably install and keep up to date GE-Proton, I recommand to use the application 'ProtonPlus')
+- GE-Proton10-11 installed (To comfortably install and keep up to date GE-Proton, I recommand to use the application 'ProtonPlus')
 - Proton EasyAntiCheat Runtime installed in Steam
 
 How to install Intrepid Launcher and Ashes of Creation:
@@ -44,9 +44,9 @@ How to install Intrepid Launcher and Ashes of Creation:
 - If you wanna have a icon, banner, etc. for your Steam entry, you can download it from [here](https://www.steamgriddb.com/search/grids?term=Ashes+of+Creation). Then click on the empty space in front of the first text field and select the downloaded icon.
 - Enter the following string to the LAUNCH OPTIONS textfield
   
-  `eval $(gamemoderun %command% AOC LauncherTetherPort=$(ss -ulpn | grep wineserv | awk '{split($4, a , ":"); print a[2]}' ) -USEEOS=0)`
+  `eval $(gamemoderun PROTON_USE_NTSYNC=1 %command% AOC LauncherTetherPort=$(ss -ulpn | grep wineserv | awk '{split($4, a , ":"); print a[2]}' ) -USEEOS=0)`
   
-- On the left side of the window click on 'Compatibility', check the checkbox and select 'GE-Proton10-10' from the dropdown menu.
+- On the left side of the window click on 'Compatibility', check the checkbox and select 'GE-Proton10-11' from the dropdown menu.
 - Next you can close the window and clear the search field
 - You now should see a entry 'Ashes of Creation' in your Steam Library
 
