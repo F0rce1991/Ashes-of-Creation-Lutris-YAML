@@ -5,7 +5,9 @@ Information:
 ============
 ~~Since the release of GE-Proton10-1 the Steam hook isn't needed anymore and the game can be started with the "Launch Game" button in the Intrepid Studios Launcher like on Windows. The manual below was updated accordingly.~~
 
-Unfortunately, the Steam hook is required again to play the game, as Intrepid Studios has updated Easy Anticheat, which causes you to get kicked from servers if you enter the game directly via launcher. You should also have Proton EasyAntiCheat Runtime installed in Steam.
+~~Unfortunately, the Steam hook is required again to play the game, as Intrepid Studios has updated Easy Anticheat, which causes you to get kicked from servers if you enter the game directly via launcher. You should also have Proton EasyAntiCheat Runtime installed in Steam.~~
+
+It looks like launching the game via the “Start Game” button in the Intrepid Studios Launcher and playing it without getting kicked by EAC is working again. Since this may change with each game or EAC update, I have not deleted the description for the Steam Hook Workaround.
 
 It can happen that you fall through the floor after loading into the game because the geometry loads too slowly. If you somehow get stuck, use the ‘Unstuck’ option from the Esc menu.
 
@@ -14,9 +16,9 @@ What you need, to use this installation method:
 
 - Linux system (e.g. Nobara Linux, Fedora, Arch Linux, etc. and avoid Debian-based distributions such as Ubuntu, etc., as these can cause some problems)
 - Lutris installed
-- Steam installed
+- Steam installed (just if you wanna or have to use the Steam Hook Workaround)
+- Proton EasyAntiCheat Runtime installed in Steam (just if you wanna or have to use the Steam Hook Workaround)
 - GE-Proton10-15 installed (To comfortably install and keep up to date GE-Proton, I recommand to use the application 'ProtonPlus')
-- Proton EasyAntiCheat Runtime installed in Steam
 
 How to install Intrepid Launcher and Ashes of Creation:
 =======================================================
@@ -33,7 +35,11 @@ How to install Intrepid Launcher and Ashes of Creation:
 - When the Intrepid Studios Launcher installation window pops up, you can leave everything as is and just start the installation.
 - Once the installation of Intrepid Studios Launcher is done, you can decide if you wanna start it right away. Nonetheless it is recommanded to uncheck the box and first finish the installation in Lutris.
 - Once the installation is complete in Lutris, you can start Intrepid Studios Launcher from the Lutris library
-- Log in to your Intrepid Studios Account and wait for the download of the game to finish (IMPORTANT! The 'Launch Game' button doesn't work with Linux. That is the part where Steam comes into play.)
+- Log in to your Intrepid Studios Account and wait for the download of the game to finish
+- Start the game with the "Launch Game" button (IMPORTANT! If you get kicked by EAC while loading into the actual game world, starting the game via the "Launch Game" button doesn't work and you also have to do the steps in the next section to configure the Steam Hook Workaround.)
+
+How to configure the Steam Hook Workaround (optinal):
+=====================================================
 - Open Steam
 - Click 'Add a Game' and then 'Add a Non-Steam Game...'
 - Click on 'Browse...' and select the exe-file of Ashes of Creation (e.g. ~/Games/ashes-of-creation/drive_c/Program Files/Intrepid Studios/AshesOfCreation/PROD/AOCClient.exe)
@@ -56,8 +62,8 @@ How to start the game:
 - Start Intrepid Studios Launcher from your Lutris Library
 - Log in to your Intrepid Studios Account
 - If there is an update to the game wait for it to finish.
-- Start 'Ashes of Creation' from your Steam Library (Intrepid Studios Launcher have to stay open and logged in while playing the game)
+- Click the "Launch Game" button <ins><strong>or</strong></ins> if you use the Steam Hook Workaround start 'Ashes of Creation' from your Steam Library (Intrepid Studios Launcher have to stay open and logged in while playing the game in both cases)
 
-For comfort reasons I recommand to create Desktop Shortcuts for Inrepid Studios Launcher and Ashes of Creation Client. You can do so by right clicking on 'Ashes of Creation' in Lutris and select the corresponding option from dropdown menu. In the Steam Library it works basically the same (right click on 'Ashes of Creation', select 'Manage' in the dropdown menu and then 'Add desktop shortcut')
+For comfort reasons I recommand to create Desktop Shortcuts for Inrepid Studios Launcher and if you use Steam Hook Workaround for the Ashes of Creation Client. You can do so by right clicking on 'Ashes of Creation' in Lutris and select the corresponding option from dropdown menu. In the Steam Library it works basically the same (right click on 'Ashes of Creation', select 'Manage' in the dropdown menu and then 'Add desktop shortcut')
 
 Have Fun!
