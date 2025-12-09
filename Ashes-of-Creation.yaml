@@ -83,10 +83,15 @@ script:
             __GL_SHADER_DISK_CACHE: 1
             __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
             __GL_SHADER_DISK_CACHE_SKIP_CLEANUP: 1
+            PROTON_DLSS_UPGRADE: 1
+            PROTON_FSR4_UPGRADE: 1
+            PROTON_FSR4_RDNA3_UPGRADE: 1
+            PROTON_FSR3_UPGRADE: 1
+            PROTON_XESS_UPGRADE: 1
             USEEOS: 0
         prefer_system_libs: false
     wine:
-        version: GE-Proton10-25
+        version: GE-Proton10-26
         battleye: false
         overrides:
             nvapi,nvapi64: disabled
